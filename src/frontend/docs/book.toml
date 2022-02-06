@@ -1,0 +1,20 @@
+[book]
+authors = ["Mark Stopka"]
+language = "en"
+multilingual = false
+src = "src"
+title = "NuPeerStack Documentation"
+
+[output.html]
+theme= "nupeerstack-theme"
+default-theme = "navy"
+copy-fonts = true
+git-repository-url = "https://github.com/NuPeerStack/NuPeerStack.perlur.cloud"
+git-repository-icon = "fa-github"
+edit-url-template = "https://github.com/NuPeerStack/NuPeerStack.perlur.cloud/edit/master/src/frontend/docs/{path}"
+site-url = "/docs/"
+
+
+[output.linkcheck]
+#follow-web-links = true
+warning-policy = "ignore"
