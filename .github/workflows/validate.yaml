@@ -1,0 +1,17 @@
+#
+#  © 2022 PERLUR Group
+#  SPDX-License-Identifier: GPL-3.0-only
+#
+
+on:
+  push:
+
+name: Validate
+
+jobs:
+  lints:
+    name: Lints
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check EditorConfig Compliance
+        uses: editorconfig-checker/action-editorconfig-checker@v1

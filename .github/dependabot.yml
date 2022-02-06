@@ -1,0 +1,17 @@
+#
+#  © 2022 PERLUR Group
+#  SPDX-License-Identifier: GPL-3.0-only
+#
+
+version: 2
+updates:
+# Set update schedule for GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/.github/workflows/"
+    schedule:
+      # Check for updates to GitHub Actions every weekday
+      interval: "daily"
+    assignees:
+      - "mark-stopka"
+    reviewers:
+      - "mark-stopka"
