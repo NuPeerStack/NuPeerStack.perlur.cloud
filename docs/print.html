@@ -1,0 +1,201 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js navy">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>NuPeerStack Documentation</title>
+        <meta name="robots" content="noindex" />
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "navy";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('navy')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="introduction/index.html"><strong aria-hidden="true">1.</strong> What is NuPeerStack</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="introduction/why-cardano/index.html"><strong aria-hidden="true">1.1.</strong> Why Cardano?</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="introduction/why-cardano/advanced-academic-research/index.html"><strong aria-hidden="true">1.1.1.</strong> Advanced Academic Research</a></li></ol></li><li class="chapter-item expanded "><a href="introduction/nupeerstack-technical-architecture/index.html"><strong aria-hidden="true">1.2.</strong> NuPeerStack Technical Architecture</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">NuPeerStack Documentation</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/NuPeerStack/NuPeerStack.perlur.cloud" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="nupeerstack-introduction"><a class="header" href="#nupeerstack-introduction">NuPeerStack Introduction</a></h1>
+<p><strong>NuPeerStack</strong> is a project that aims to build decentralized, permission-less and censorship resistant alternative to <a href="https://www.openstack.org/">OpenStack</a> by combining the latest from Blockchain, Distributed Systems, Open Hardware and Peer-to-Peer Networking technologies.</p>
+<h2 id="philosophy"><a class="header" href="#philosophy">Philosophy</a></h2>
+<p>In order to build permission-less, trust-less and trully decentralized end-to-emd secure platform, available to the masses on peer-to-peer basis, several treams among different disciplines of human enterpreneurship need to converge, and synchronize.</p>
+<p>To enable open source, open hardware, open access, permision-less and decentralized future for all, we work with our partners and build a hybrid platform that uses decentralized technology where it is currently feasible, yet enables out-sourcing of different components of the full stack, such as compute, to a trusted, centralized counter-party until such point that peer-to-peer alternative becomes available.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="why-cardano"><a class="header" href="#why-cardano">Why Cardano?</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="advanced-academic-research"><a class="header" href="#advanced-academic-research">Advanced Academic Research</a></h1>
+<h2 id="ouroboros-a-provably-secure-proof-of-stake-blockchain-protocol"><a class="header" href="#ouroboros-a-provably-secure-proof-of-stake-blockchain-protocol">Ouroboros: A Provably Secure Proof-of-Stake Blockchain Protocol</a></h2>
+<p><a href="introduction/why-cardano/advanced-academic-research/../">Cardano Blockchain</a> currently runs <strong>Ouroboros Praos</strong> version of Ouroboros series of Proof of Stake consensus protocols, this version of Ouroboros uses Verifiable Random Function in order to hide the identity of next block-producer, which brings it's own issues, however, Ouroboros Omega is being planned as an upgrade for the Cardano consensus protocol, incorporating ideas from <strong>Ouroboros Genesis</strong> and <strong>Ouroboros Chronos</strong> research papers.</p>
+<p>For our use-case, we have decided it will work best, if we compose our own version of Ouroboros Proof of Stake based on existing research, and ideas other teams, including the team at [Mina Protocol], are exploring such as recursive zkSNARKs. Later we will likely move to mixed consensus protocol, however for a minimal viable product, we will start with <a href="https://eprint.iacr.org/2017/573">Ouroboros Praos</a> just as it is currently running on Cardano mainnet.</p>
+<h3 id="ouroboros-proof-of-stake-research-papers"><a class="header" href="#ouroboros-proof-of-stake-research-papers">Ouroboros Proof of Stake Research Papers</a></h3>
+<ul>
+<li><a href="https://eprint.iacr.org/2016/889">Ouroboros: A Provably Secure Proof-of-Stake Blockchain Protocol</a></li>
+<li><a href="https://eprint.iacr.org/2017/573">Ouroboros Praos: An adaptively-secure, semi-synchronous proof-of-stake blockchain</a></li>
+<li><a href="https://eprint.iacr.org/2018/378">Ouroboros Genesis: Composable Proof-of-Stake Blockchains with Dynamic Availability</a></li>
+<li><a href="https://eprint.iacr.org/2018/1132">Ouroboros Crypsinous: Privacy-Preserving Proof-of-Stake</a></li>
+<li><a href="https://eprint.iacr.org/2019/838">Ouroboros Chronos: Permissionless Clock Synchronization via Proof-of-Stake</a></li>
+<li><a href="https://eprint.iacr.org/2019/942">Ouroboros Clepsydra: Ouroboros Praos in the Universally Composable Relative Time Model</a></li>
+</ul>
+<h2 id="sidechains"><a class="header" href="#sidechains">Sidechains</a></h2>
+<p><a href="https://iog.io/">Input Output Global</a> performed a significant <a href="https://iohk.io/en/research/library/">scientific research into other domains</a>, including Sidechains:</p>
+<ul>
+<li><a href="https://eprint.iacr.org/2018/1048">Proof-of-Work Sidechains</a></li>
+<li><a href="https://eprint.iacr.org/2017/963">Non-Interactive Proofs of Proof-of-Work</a></li>
+<li><a href="https://eprint.iacr.org/2018/1239">Proof-of-Stake Sidechains</a></li>
+<li><a href="https://eprint.iacr.org/2020/123">Zendoo: a zk-SNARK Verifiable Cross-Chain Transfer Protocol Enabling Decoupled and Decentralized Sidechains</a></li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="nupeerstack-technical-architecture"><a class="header" href="#nupeerstack-technical-architecture">NuPeerStack Technical Architecture</a></h1>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        <script type="text/javascript">
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+    </body>
+</html>
