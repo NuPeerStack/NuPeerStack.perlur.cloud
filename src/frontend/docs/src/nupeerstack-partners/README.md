@@ -6,7 +6,7 @@
 <div style="display: flex; align-items: center;">
     <img
         style="width: 20%; float: left; padding-right: 1em;"
-        src="/assets/logos/AIKIT-digital-logo-white.png"
+        src="../assets/logos/AIKIT-digital-logo-white.png"
         alt="AIKIT Digital Logo"
     />
 
@@ -24,7 +24,7 @@
 <div style="display: flex; align-items: center;">
     <img
         style="width: 30%; float: left; padding-right: 1em;"
-        src="/assets/logos/liqwid.svg"
+        src="../assets/logos/liqwid.svg"
         alt="Liqwid Finance Logo"
     />
 
@@ -36,7 +36,7 @@
 <div style="display: flex; align-items: center;">
     <img
         style="width: 30%; float: left; padding-right: 1em;"
-        src="/assets/logos/projectNEWM.png"
+        src="../assets/logos/projectNEWM.png"
         alt="projectNEWM Logo"
     />
 
@@ -57,7 +57,7 @@
 <div style="display: flex; align-items: center;">
     <img
         style="width: 30%; float: left; padding-right: 1em; filter: brightness(0) invert(1);"
-        src="/assets/logos/Storj-color-horizontal.svg"
+        src="../assets/logos/Storj-color-horizontal.svg"
         alt="Storj Logo"
     />
 
