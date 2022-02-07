@@ -17,4 +17,4 @@ site-url = "/docs/"
 
 [output.linkcheck]
 #follow-web-links = true
-warning-policy = "ignore"
+warning-policy = "warn"

@@ -1,0 +1,5 @@
+# DAO Governance Model
+
+**NuPeerStack** DAO governance leverages a combination of [fungible tokens](/nupeerstack-business-model/the-tokenomics/#fungible-tokens) as well as [non-fungible tokens (NFTs)](/nupeerstack-business-model/the-tokenomics/#non-fungible-tokens).
+
+Owners of [fungible tokens](/nupeerstack-business-model/the-tokenomics/#fungible-tokens) use their voting power to elect holders of pre-defined [non-fungible executive roles tokens](/nupeerstack-business-model/the-tokenomics/#executive-roles-nfts). Holders of executive role token take timely decisions (in form of a proposal for the DAO to execute certain action) on behalf of the entire community in their respective areas, however, owners of the [fungible tokens](/nupeerstack-business-model/the-tokenomics/#fungible-tokens) may always vote against any given proposal in reasonable time, depending on the time sensitivity of the respective action being proposed by the holder of [the executive role token]((/nupeerstack-business-model/the-tokenomics/#executive-roles-nfts)).
