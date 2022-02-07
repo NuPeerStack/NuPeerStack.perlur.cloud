@@ -213,8 +213,72 @@
 <div style="break-before: page; page-break-before: always;"></div><h1 id="the-products"><a class="header" href="#the-products">The Products</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="the-services"><a class="header" href="#the-services">The Services</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="infrastructure-as-a-service"><a class="header" href="#infrastructure-as-a-service">Infrastructure as a Service</a></h1>
-<p>Using software deployed on wide range of commodity hardware, <strong>Infrastructure as a Service</strong> is the primary component of any true public cloud platform, it is the first level of abstraction of so-called bare metal hardware. Within these high level service categories, other specific sub-services are hiding, suiting different use-case. When composed together, a complete application can be deployed and managed throughout it's lifecycle, including use by end-users.</p>
+<p>Using software deployed on wide range of commodity hardware, <strong>Infrastructure as a Service</strong> is the primary component of any true public cloud platform, it is the first level of abstraction of so-called bare metal hardware. Within these high level service categories, other specific sub-services are hiding, serving different use-cases. When composed together, a complete application can be deployed and managed throughout it's lifecycle, including seamless use by the end-users.</p>
+<p>These services together create a service catalogue, from which a Solution Architect selects individual services, which are required to enable the given use-case higher up the service stack, or given application.</p>
 <h2 id="storage-as-a-service"><a class="header" href="#storage-as-a-service">Storage as a Service</a></h2>
+<p>Except for Random Access Memory (RAM) which we consider part of <strong>Compute as a Service</strong>, we count all other Data Storage types as an instance of <strong>Storange as a Service</strong>. We know Data Storage of several types, and with different characteristics suited for different use-cases:</p>
+<ul>
+<li>
+<p><strong>Attachment Type</strong> (<em>to consumer</em>)</p>
+<ul>
+<li>Local (Host Attached) Storage</li>
+<li>Local Area Network Attached Storage</li>
+<li>Wide Area Network Attached Storage</li>
+</ul>
+</li>
+<li>
+<p><strong>Latency</strong> (<em>how long it takes to access the stored data or confirm data writes</em>)</p>
+<ul>
+<li>Time to first byte</li>
+<li>I/O Operations per Second (<em>IOPS</em>)</li>
+</ul>
+</li>
+<li>
+<p><strong>Bandwidth</strong> (<em>amount of data over a window of time a consumer can read or write</em> e.q. 100MB/s)</p>
+<ul>
+<li>Ultra Low bandwidth (less than 10 Mb/s or 1.3 MB/s)</li>
+<li>Low bandwidth (more than 10 Mb/s, but less than 50Mb/s)</li>
+<li>Medium bandwidth (more than 50 Mb/s, but less than 250Mb/s)</li>
+<li>High bandwidth (more than 250 Mb/s, but less than 10 Gb/s)</li>
+<li>Ultra high bandwidth (more than 10 Gb/s)</li>
+</ul>
+</li>
+<li>
+<p><strong>Storage Capacity</strong> (<em>amount of data a consumer can store for a given period of time</em>)</p>
+<ul>
+<li>Low Capacity (less than 256GB)</li>
+<li>Medium Capacity (more than 256GB less than 10TB)</li>
+<li>High Capacity (more than 10TB less than 1PB)</li>
+<li>Ultra High Capacity (more than 1PB)</li>
+</ul>
+</li>
+<li>
+<p><strong>Abstraction Type</strong> (<em>how is the Data Storage type presented to the consumer</em>)<br />
+In practice, all data is effectively stored on <strong>Block Storage</strong>, but consumer may be provided with different abstractions, e.q. from File Storage to Object Storage to Block Storage; e.q. in case of <em>Cloud Shared Drive</em> such as <strong>Google Drive</strong>, or <strong>Microsoft OneDrive</strong>.</p>
+<ul>
+<li>Block Storage</li>
+<li>File Storage</li>
+<li>Object Storage</li>
+</ul>
+</li>
+<li>
+<p><strong>Persistence Type</strong> (<em>how long does the data persist</em>)</p>
+<ul>
+<li>Volatile Storage (<em>does not persist after power-loss</em>)</li>
+<li>Non-Volatile Storage (<em>persists after power-loss</em>)
+<ul>
+<li>Persistent Storage (<em>is intended as long-term location for given data, accessed regularly</em>)</li>
+<li>Scratch Storage (<em>is intended as short-term location for given data, usually furing data processing</em>)</li>
+<li>Archival Storage (<em>is intended as long-term location for given data, accessed sporadically</em>)
+<ul>
+<li>Write Once Read Many Storage (<strong>WORM</strong> - <em>most Blockchains are a type of Write Once Read Many replicated storage</em>)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 <h2 id="compute-as-a-service"><a class="header" href="#compute-as-a-service">Compute as a Service</a></h2>
 <h2 id="network-as-a-service"><a class="header" href="#network-as-a-service">Network as a Service</a></h2>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="platform-as-a-service"><a class="header" href="#platform-as-a-service">Platform as a Service</a></h1>
