@@ -4,7 +4,7 @@
 
 [Cardano Blockchain](../) currently runs **Ouroboros Praos** version of Ouroboros series of Proof of Stake consensus protocols, this version of Ouroboros uses Verifiable Random Function in order to hide the identity of next block-producer, which brings it's own issues, however, Ouroboros Omega is being planned as an upgrade for the Cardano consensus protocol, incorporating ideas from **Ouroboros Genesis** and **Ouroboros Chronos** research papers.
 
-For our use-case, we have decided it will work best, if we compose our own version of Ouroboros Proof of Stake based on existing research, and ideas other teams, including the team at [Mina Protocol], are exploring such as recursive zkSNARKs. Later we will likely move to mixed consensus protocol, however for a minimal viable product, we will start with [Ouroboros Praos](https://eprint.iacr.org/2017/573) just as it is currently running on Cardano mainnet.
+For our use-case, we have decided it will work best, if we compose our own version of Ouroboros Proof of Stake based on existing research, and ideas other teams, including the team at [Mina Protocol](https://minaprotocol.com/), are exploring such as recursive zkSNARKs. Later we will likely move to mixed consensus protocol, however for a minimal viable product, we will start with [Ouroboros Praos](https://eprint.iacr.org/2017/573) just as it is currently running on Cardano mainnet.
 
 ### Ouroboros Proof of Stake Research Papers
 
