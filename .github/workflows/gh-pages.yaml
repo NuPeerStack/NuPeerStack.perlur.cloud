@@ -43,6 +43,6 @@ jobs:
         if: ${{ github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: book/html/
+          publish_dir: src/frontend/docs/book/html/
           destination_dir: docs/
           cname: NuPeerStack.perlur.cloud
